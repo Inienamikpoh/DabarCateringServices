@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>contact us</title>
+</head>
+<body>
+    <div class="container">
+        <form action="https://formspree.io/f/mrgwbznz" method="POST"> 
+            <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" name="full name" placeholder="full name" required>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <input type="text" id="phone" name="phone number" placeholder="phone no." required>
+            <textarea id="message" rows="4" name="message" placeholder="How can we help you?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <!-- <script>
+    onsubmit="sendEmail(); reset(); return false;"
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "lionekspecials@gmail.com",
+                Password: "JamesCarswell1!.",
+                To: 'lionekspecials@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "Enquiry",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone number: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+            })
+            .then(function (message) {
+            alert("Your message has been sent successfully!")
+            });
+        }
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+</body>
+</html>
+
+
+<!-- In order to use SMTP, you need to configure your Gmail. You need to change two
+    settings of your Gmail account from which you are sending the mail i.e.
+    
+    1 Revoke 2-step verification
+    2 Enabling less secure apps to access Gmail. You can easily do this by clicking on the link Enable -->
+    
+
+<!-- Note: -->
+
+<!-- This technology is only to be used on a local server and for projects. if it is to go online with a domain
+of it's own, it is advisable to use the smtp API provider so that anyone can use it. Use elastic email
+in that case but it requires a custom domain. You can also hide your username and password by encrypting it on the smtpJS.com website -->
